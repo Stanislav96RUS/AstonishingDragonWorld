@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A9C33A9DBE1737232DC152D /* Pods_AstonishingDragonWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445074DD5AA3070BAC4E864 /* Pods_AstonishingDragonWorld.framework */; };
+		840CFAC20AB438227B016676 /* Pods_AstonishingDragonWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FAEE8F7B510E4467E92A1 /* Pods_AstonishingDragonWorldTests.framework */; };
+		850D5CDE2B7CC8AA00F1A489 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850D5CDD2B7CC8AA00F1A489 /* Constants.swift */; };
+		85133D882BAF2579002C7D2E /* AVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85133D872BAF2579002C7D2E /* AVService.swift */; };
+		85133D8A2BAF2E2F002C7D2E /* Records.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85133D892BAF2E2F002C7D2E /* Records.mp3 */; };
+		85133D8C2BAF30F2002C7D2E /* Settings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85133D8B2BAF30F1002C7D2E /* Settings.mp3 */; };
+		85133D8E2BAF3290002C7D2E /* Game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85133D8D2BAF3290002C7D2E /* Game.mp3 */; };
+		85133D902BAF36EE002C7D2E /* Boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85133D8F2BAF36EE002C7D2E /* Boom.mp3 */; };
+		8513747C2B864EBD004B7577 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513747B2B864EBD004B7577 /* SettingsViewController.swift */; };
+		8513747E2B864ED1004B7577 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513747D2B864ED1004B7577 /* SettingsPresenter.swift */; };
+		851374802B864EE1004B7577 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513747F2B864EE1004B7577 /* SettingsRouter.swift */; };
+		851374822B865070004B7577 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851374812B865070004B7577 /* RecordsViewController.swift */; };
+		851374842B8650AE004B7577 /* RecordsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851374832B8650AE004B7577 /* RecordsPresenter.swift */; };
+		851374862B8650F5004B7577 /* RecordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851374852B8650F5004B7577 /* RecordsRouter.swift */; };
+		8516E15A2B94CE140001E7AA /* StartViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516E1592B94CE140001E7AA /* StartViewButton.swift */; };
+		8516E15C2B94FBA80001E7AA /* GameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516E15B2B94FBA80001E7AA /* GameBackgroundView.swift */; };
+		85282B4A2B90A7400039FECF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85282B492B90A7400039FECF /* ImagePicker.swift */; };
+		8532108C2BA085A500B5A229 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8532108B2BA085A500B5A229 /* UserModel.swift */; };
+		8532108E2BA0864A00B5A229 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8532108D2BA0864A00B5A229 /* StorageService.swift */; };
+		853210902BA0AFC800B5A229 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8532108F2BA0AFC800B5A229 /* RecordModel.swift */; };
+		853336892B8CAE8500F21939 /* ObstaclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853336882B8CAE8500F21939 /* ObstaclesView.swift */; };
+		853E799D2B925059009B107D /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E799C2B925059009B107D /* ScoreTableViewCell.swift */; };
+		8546DB322B7B639200813DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546DB312B7B639200813DA4 /* AppDelegate.swift */; };
+		8546DB342B7B639200813DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546DB332B7B639200813DA4 /* SceneDelegate.swift */; };
+		8546DB3B2B7B639300813DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8546DB3A2B7B639300813DA4 /* Assets.xcassets */; };
+		8546DB3E2B7B639300813DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8546DB3C2B7B639300813DA4 /* LaunchScreen.storyboard */; };
+		8546DB492B7B639300813DA4 /* AstonishingDragonWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546DB482B7B639300813DA4 /* AstonishingDragonWorldTests.swift */; };
+		8546DB532B7B639300813DA4 /* AstonishingDragonWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546DB522B7B639300813DA4 /* AstonishingDragonWorldUITests.swift */; };
+		8546DB552B7B639300813DA4 /* AstonishingDragonWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546DB542B7B639300813DA4 /* AstonishingDragonWorldUITestsLaunchTests.swift */; };
+		8546DB652B7BBF3800813DA4 /* Start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8546DB642B7BBF3800813DA4 /* Start.mp3 */; };
+		85652AD22B7F7BBA00A12A29 /* pixeleum-48.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85652AD12B7F7BBA00A12A29 /* pixeleum-48.ttf */; };
+		858B7F532B7BCA1E00957027 /* BackSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 858B7F522B7BCA1E00957027 /* BackSound.mp3 */; };
+		85B5A64F2B863D8D00AFEFBC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A64E2B863D8D00AFEFBC /* StartViewController.swift */; };
+		85B5A6512B863DA400AFEFBC /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A6502B863DA400AFEFBC /* StartPresenter.swift */; };
+		85B5A6532B863DB200AFEFBC /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A6522B863DB200AFEFBC /* StartRouter.swift */; };
+		85B5A6552B8642E900AFEFBC /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A6542B8642E900AFEFBC /* GameRouter.swift */; };
+		85B5A6572B86437B00AFEFBC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A6562B86437B00AFEFBC /* GameViewController.swift */; };
+		85B5A6592B8643B600AFEFBC /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B5A6582B8643B600AFEFBC /* GamePresenter.swift */; };
+		CC8B01AFB6A87437D3755AF3 /* Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8439273C0C79A1252AC3F7 /* Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8546DB452B7B639300813DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8546DB262B7B639200813DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8546DB2D2B7B639200813DA4;
+			remoteInfo = AstonishingDragonWorld;
+		};
+		8546DB4F2B7B639300813DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8546DB262B7B639200813DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8546DB2D2B7B639200813DA4;
+			remoteInfo = AstonishingDragonWorld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0445074DD5AA3070BAC4E864 /* Pods_AstonishingDragonWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstonishingDragonWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20401A9626557076FAEAD294 /* Pods-AstonishingDragonWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorldTests.release.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorldTests/Pods-AstonishingDragonWorldTests.release.xcconfig"; sourceTree = "<group>"; };
+		25AE9710D600B0F91E928C7D /* Pods-AstonishingDragonWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorld.debug.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorld/Pods-AstonishingDragonWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		30D386CC35414118991AA8A1 /* Pods-AstonishingDragonWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorld.release.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorld/Pods-AstonishingDragonWorld.release.xcconfig"; sourceTree = "<group>"; };
+		3ABF58570C02F012FA3AEAD9 /* Pods-AstonishingDragonWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorldTests.debug.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorldTests/Pods-AstonishingDragonWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		795FAEE8F7B510E4467E92A1 /* Pods_AstonishingDragonWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstonishingDragonWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850D5CDD2B7CC8AA00F1A489 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85133D872BAF2579002C7D2E /* AVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVService.swift; sourceTree = "<group>"; };
+		85133D892BAF2E2F002C7D2E /* Records.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Records.mp3; sourceTree = "<group>"; };
+		85133D8B2BAF30F1002C7D2E /* Settings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Settings.mp3; sourceTree = "<group>"; };
+		85133D8D2BAF3290002C7D2E /* Game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Game.mp3; sourceTree = "<group>"; };
+		85133D8F2BAF36EE002C7D2E /* Boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Boom.mp3; sourceTree = "<group>"; };
+		8513747B2B864EBD004B7577 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8513747D2B864ED1004B7577 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		8513747F2B864EE1004B7577 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		851374812B865070004B7577 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		851374832B8650AE004B7577 /* RecordsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsPresenter.swift; sourceTree = "<group>"; };
+		851374852B8650F5004B7577 /* RecordsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsRouter.swift; sourceTree = "<group>"; };
+		8516E1592B94CE140001E7AA /* StartViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewButton.swift; sourceTree = "<group>"; };
+		8516E15B2B94FBA80001E7AA /* GameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBackgroundView.swift; sourceTree = "<group>"; };
+		85282B492B90A7400039FECF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8532108B2BA085A500B5A229 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8532108D2BA0864A00B5A229 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		8532108F2BA0AFC800B5A229 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		853336882B8CAE8500F21939 /* ObstaclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstaclesView.swift; sourceTree = "<group>"; };
+		853E799C2B925059009B107D /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		8546DB2E2B7B639200813DA4 /* AstonishingDragonWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstonishingDragonWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8546DB312B7B639200813DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8546DB332B7B639200813DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8546DB3A2B7B639300813DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8546DB3D2B7B639300813DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8546DB3F2B7B639300813DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8546DB442B7B639300813DA4 /* AstonishingDragonWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstonishingDragonWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8546DB482B7B639300813DA4 /* AstonishingDragonWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstonishingDragonWorldTests.swift; sourceTree = "<group>"; };
+		8546DB4E2B7B639300813DA4 /* AstonishingDragonWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstonishingDragonWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8546DB522B7B639300813DA4 /* AstonishingDragonWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstonishingDragonWorldUITests.swift; sourceTree = "<group>"; };
+		8546DB542B7B639300813DA4 /* AstonishingDragonWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstonishingDragonWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8546DB642B7BBF3800813DA4 /* Start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Start.mp3; sourceTree = "<group>"; };
+		85652AD12B7F7BBA00A12A29 /* pixeleum-48.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pixeleum-48.ttf"; sourceTree = "<group>"; };
+		858B7F522B7BCA1E00957027 /* BackSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackSound.mp3; sourceTree = "<group>"; };
+		85B5A64E2B863D8D00AFEFBC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		85B5A6502B863DA400AFEFBC /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		85B5A6522B863DB200AFEFBC /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		85B5A6542B8642E900AFEFBC /* GameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
+		85B5A6562B86437B00AFEFBC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		85B5A6582B8643B600AFEFBC /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
+		DF8439273C0C79A1252AC3F7 /* Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0902A8845372496836FC69B /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.debug.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7B6A72E7E3C0DD14D6D760 /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.release.xcconfig"; path = "Target Support Files/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8546DB2B2B7B639200813DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C33A9DBE1737232DC152D /* Pods_AstonishingDragonWorld.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB412B7B639300813DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CFAC20AB438227B016676 /* Pods_AstonishingDragonWorldTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB4B2B7B639300813DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8B01AFB6A87437D3755AF3 /* Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		850D5CDF2B7CCF3D00F1A489 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8546DB642B7BBF3800813DA4 /* Start.mp3 */,
+				85133D8D2BAF3290002C7D2E /* Game.mp3 */,
+				85133D8B2BAF30F1002C7D2E /* Settings.mp3 */,
+				85133D892BAF2E2F002C7D2E /* Records.mp3 */,
+				85133D8F2BAF36EE002C7D2E /* Boom.mp3 */,
+				858B7F522B7BCA1E00957027 /* BackSound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		85133D832BAEF480002C7D2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				85282B492B90A7400039FECF /* ImagePicker.swift */,
+				8532108D2BA0864A00B5A229 /* StorageService.swift */,
+				85133D872BAF2579002C7D2E /* AVService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		85133D842BAEF4B9002C7D2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8532108B2BA085A500B5A229 /* UserModel.swift */,
+				8532108F2BA0AFC800B5A229 /* RecordModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8546DB252B7B639200813DA4 = {
+			isa = PBXGroup;
+			children = (
+				8546DB302B7B639200813DA4 /* AstonishingDragonWorld */,
+				8546DB472B7B639300813DA4 /* AstonishingDragonWorldTests */,
+				8546DB512B7B639300813DA4 /* AstonishingDragonWorldUITests */,
+				8546DB2F2B7B639200813DA4 /* Products */,
+				B9BDE43D5D3DA68A6C6E1BB0 /* Pods */,
+				F2AB6351A008D08B085EE664 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8546DB2F2B7B639200813DA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8546DB2E2B7B639200813DA4 /* AstonishingDragonWorld.app */,
+				8546DB442B7B639300813DA4 /* AstonishingDragonWorldTests.xctest */,
+				8546DB4E2B7B639300813DA4 /* AstonishingDragonWorldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8546DB302B7B639200813DA4 /* AstonishingDragonWorld */ = {
+			isa = PBXGroup;
+			children = (
+				8546DB312B7B639200813DA4 /* AppDelegate.swift */,
+				8546DB332B7B639200813DA4 /* SceneDelegate.swift */,
+				85B5A64A2B863D0900AFEFBC /* StartScreen */,
+				85B5A64B2B863D1C00AFEFBC /* GameScreen */,
+				85B5A64C2B863D2900AFEFBC /* SettingsScreen */,
+				85B5A64D2B863D4800AFEFBC /* RecordsScreen */,
+				85133D842BAEF4B9002C7D2E /* Models */,
+				85133D832BAEF480002C7D2E /* Services */,
+				850D5CDF2B7CCF3D00F1A489 /* Sounds */,
+				85652ACF2B7F795200A12A29 /* Fonts */,
+				850D5CDD2B7CC8AA00F1A489 /* Constants.swift */,
+				8546DB3A2B7B639300813DA4 /* Assets.xcassets */,
+				8546DB3C2B7B639300813DA4 /* LaunchScreen.storyboard */,
+				8546DB3F2B7B639300813DA4 /* Info.plist */,
+			);
+			path = AstonishingDragonWorld;
+			sourceTree = "<group>";
+		};
+		8546DB472B7B639300813DA4 /* AstonishingDragonWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				8546DB482B7B639300813DA4 /* AstonishingDragonWorldTests.swift */,
+			);
+			path = AstonishingDragonWorldTests;
+			sourceTree = "<group>";
+		};
+		8546DB512B7B639300813DA4 /* AstonishingDragonWorldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8546DB522B7B639300813DA4 /* AstonishingDragonWorldUITests.swift */,
+				8546DB542B7B639300813DA4 /* AstonishingDragonWorldUITestsLaunchTests.swift */,
+			);
+			path = AstonishingDragonWorldUITests;
+			sourceTree = "<group>";
+		};
+		85652ACF2B7F795200A12A29 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				85652AD12B7F7BBA00A12A29 /* pixeleum-48.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		85B5A64A2B863D0900AFEFBC /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				85B5A64E2B863D8D00AFEFBC /* StartViewController.swift */,
+				8516E1592B94CE140001E7AA /* StartViewButton.swift */,
+				85B5A6502B863DA400AFEFBC /* StartPresenter.swift */,
+				85B5A6522B863DB200AFEFBC /* StartRouter.swift */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		85B5A64B2B863D1C00AFEFBC /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				85B5A6562B86437B00AFEFBC /* GameViewController.swift */,
+				8516E15B2B94FBA80001E7AA /* GameBackgroundView.swift */,
+				85B5A6582B8643B600AFEFBC /* GamePresenter.swift */,
+				85B5A6542B8642E900AFEFBC /* GameRouter.swift */,
+				853336882B8CAE8500F21939 /* ObstaclesView.swift */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		85B5A64C2B863D2900AFEFBC /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8513747B2B864EBD004B7577 /* SettingsViewController.swift */,
+				8513747D2B864ED1004B7577 /* SettingsPresenter.swift */,
+				8513747F2B864EE1004B7577 /* SettingsRouter.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		85B5A64D2B863D4800AFEFBC /* RecordsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				851374812B865070004B7577 /* RecordsViewController.swift */,
+				851374832B8650AE004B7577 /* RecordsPresenter.swift */,
+				851374852B8650F5004B7577 /* RecordsRouter.swift */,
+				853E799C2B925059009B107D /* ScoreTableViewCell.swift */,
+			);
+			path = RecordsScreen;
+			sourceTree = "<group>";
+		};
+		B9BDE43D5D3DA68A6C6E1BB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25AE9710D600B0F91E928C7D /* Pods-AstonishingDragonWorld.debug.xcconfig */,
+				30D386CC35414118991AA8A1 /* Pods-AstonishingDragonWorld.release.xcconfig */,
+				F0902A8845372496836FC69B /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.debug.xcconfig */,
+				FA7B6A72E7E3C0DD14D6D760 /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.release.xcconfig */,
+				3ABF58570C02F012FA3AEAD9 /* Pods-AstonishingDragonWorldTests.debug.xcconfig */,
+				20401A9626557076FAEAD294 /* Pods-AstonishingDragonWorldTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2AB6351A008D08B085EE664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0445074DD5AA3070BAC4E864 /* Pods_AstonishingDragonWorld.framework */,
+				DF8439273C0C79A1252AC3F7 /* Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests.framework */,
+				795FAEE8F7B510E4467E92A1 /* Pods_AstonishingDragonWorldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8546DB2D2B7B639200813DA4 /* AstonishingDragonWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8546DB582B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorld" */;
+			buildPhases = (
+				C20AFB00DC0313B2D296F303 /* [CP] Check Pods Manifest.lock */,
+				8546DB2A2B7B639200813DA4 /* Sources */,
+				8546DB2B2B7B639200813DA4 /* Frameworks */,
+				8546DB2C2B7B639200813DA4 /* Resources */,
+				72A4308ADDFF59F17E4B4F85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstonishingDragonWorld;
+			productName = AstonishingDragonWorld;
+			productReference = 8546DB2E2B7B639200813DA4 /* AstonishingDragonWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8546DB432B7B639300813DA4 /* AstonishingDragonWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8546DB5B2B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorldTests" */;
+			buildPhases = (
+				44FF58B473FA0C6B39BF20C0 /* [CP] Check Pods Manifest.lock */,
+				8546DB402B7B639300813DA4 /* Sources */,
+				8546DB412B7B639300813DA4 /* Frameworks */,
+				8546DB422B7B639300813DA4 /* Resources */,
+				C4BD12A1E0A14F3620451A0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8546DB462B7B639300813DA4 /* PBXTargetDependency */,
+			);
+			name = AstonishingDragonWorldTests;
+			productName = AstonishingDragonWorldTests;
+			productReference = 8546DB442B7B639300813DA4 /* AstonishingDragonWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8546DB4D2B7B639300813DA4 /* AstonishingDragonWorldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8546DB5E2B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorldUITests" */;
+			buildPhases = (
+				FE478F0A5C6DD1F54407EE1D /* [CP] Check Pods Manifest.lock */,
+				8546DB4A2B7B639300813DA4 /* Sources */,
+				8546DB4B2B7B639300813DA4 /* Frameworks */,
+				8546DB4C2B7B639300813DA4 /* Resources */,
+				7144AF6803A01306D5CEC6B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8546DB502B7B639300813DA4 /* PBXTargetDependency */,
+			);
+			name = AstonishingDragonWorldUITests;
+			productName = AstonishingDragonWorldUITests;
+			productReference = 8546DB4E2B7B639300813DA4 /* AstonishingDragonWorldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8546DB262B7B639200813DA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8546DB2D2B7B639200813DA4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					8546DB432B7B639300813DA4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 8546DB2D2B7B639200813DA4;
+					};
+					8546DB4D2B7B639300813DA4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 8546DB2D2B7B639200813DA4;
+					};
+				};
+			};
+			buildConfigurationList = 8546DB292B7B639200813DA4 /* Build configuration list for PBXProject "AstonishingDragonWorld" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8546DB252B7B639200813DA4;
+			productRefGroup = 8546DB2F2B7B639200813DA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8546DB2D2B7B639200813DA4 /* AstonishingDragonWorld */,
+				8546DB432B7B639300813DA4 /* AstonishingDragonWorldTests */,
+				8546DB4D2B7B639300813DA4 /* AstonishingDragonWorldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8546DB2C2B7B639200813DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85133D902BAF36EE002C7D2E /* Boom.mp3 in Resources */,
+				85133D8E2BAF3290002C7D2E /* Game.mp3 in Resources */,
+				8546DB3E2B7B639300813DA4 /* LaunchScreen.storyboard in Resources */,
+				8546DB652B7BBF3800813DA4 /* Start.mp3 in Resources */,
+				8546DB3B2B7B639300813DA4 /* Assets.xcassets in Resources */,
+				858B7F532B7BCA1E00957027 /* BackSound.mp3 in Resources */,
+				85133D8C2BAF30F2002C7D2E /* Settings.mp3 in Resources */,
+				85652AD22B7F7BBA00A12A29 /* pixeleum-48.ttf in Resources */,
+				85133D8A2BAF2E2F002C7D2E /* Records.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB422B7B639300813DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB4C2B7B639300813DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44FF58B473FA0C6B39BF20C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstonishingDragonWorldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7144AF6803A01306D5CEC6B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72A4308ADDFF59F17E4B4F85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld/Pods-AstonishingDragonWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld/Pods-AstonishingDragonWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorld/Pods-AstonishingDragonWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20AFB00DC0313B2D296F303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstonishingDragonWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4BD12A1E0A14F3620451A0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorldTests/Pods-AstonishingDragonWorldTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorldTests/Pods-AstonishingDragonWorldTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstonishingDragonWorldTests/Pods-AstonishingDragonWorldTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE478F0A5C6DD1F54407EE1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8546DB2A2B7B639200813DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8516E15C2B94FBA80001E7AA /* GameBackgroundView.swift in Sources */,
+				85B5A6552B8642E900AFEFBC /* GameRouter.swift in Sources */,
+				850D5CDE2B7CC8AA00F1A489 /* Constants.swift in Sources */,
+				85B5A6532B863DB200AFEFBC /* StartRouter.swift in Sources */,
+				851374862B8650F5004B7577 /* RecordsRouter.swift in Sources */,
+				85B5A6572B86437B00AFEFBC /* GameViewController.swift in Sources */,
+				853336892B8CAE8500F21939 /* ObstaclesView.swift in Sources */,
+				8546DB322B7B639200813DA4 /* AppDelegate.swift in Sources */,
+				8546DB342B7B639200813DA4 /* SceneDelegate.swift in Sources */,
+				8532108E2BA0864A00B5A229 /* StorageService.swift in Sources */,
+				85133D882BAF2579002C7D2E /* AVService.swift in Sources */,
+				8532108C2BA085A500B5A229 /* UserModel.swift in Sources */,
+				85B5A6592B8643B600AFEFBC /* GamePresenter.swift in Sources */,
+				851374842B8650AE004B7577 /* RecordsPresenter.swift in Sources */,
+				851374822B865070004B7577 /* RecordsViewController.swift in Sources */,
+				851374802B864EE1004B7577 /* SettingsRouter.swift in Sources */,
+				85B5A6512B863DA400AFEFBC /* StartPresenter.swift in Sources */,
+				853210902BA0AFC800B5A229 /* RecordModel.swift in Sources */,
+				853E799D2B925059009B107D /* ScoreTableViewCell.swift in Sources */,
+				8516E15A2B94CE140001E7AA /* StartViewButton.swift in Sources */,
+				85B5A64F2B863D8D00AFEFBC /* StartViewController.swift in Sources */,
+				85282B4A2B90A7400039FECF /* ImagePicker.swift in Sources */,
+				8513747C2B864EBD004B7577 /* SettingsViewController.swift in Sources */,
+				8513747E2B864ED1004B7577 /* SettingsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB402B7B639300813DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8546DB492B7B639300813DA4 /* AstonishingDragonWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8546DB4A2B7B639300813DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8546DB552B7B639300813DA4 /* AstonishingDragonWorldUITestsLaunchTests.swift in Sources */,
+				8546DB532B7B639300813DA4 /* AstonishingDragonWorldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8546DB462B7B639300813DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8546DB2D2B7B639200813DA4 /* AstonishingDragonWorld */;
+			targetProxy = 8546DB452B7B639300813DA4 /* PBXContainerItemProxy */;
+		};
+		8546DB502B7B639300813DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8546DB2D2B7B639200813DA4 /* AstonishingDragonWorld */;
+			targetProxy = 8546DB4F2B7B639300813DA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8546DB3C2B7B639300813DA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8546DB3D2B7B639300813DA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8546DB562B7B639300813DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8546DB572B7B639300813DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8546DB592B7B639300813DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25AE9710D600B0F91E928C7D /* Pods-AstonishingDragonWorld.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstonishingDragonWorld/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorld";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8546DB5A2B7B639300813DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D386CC35414118991AA8A1 /* Pods-AstonishingDragonWorld.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstonishingDragonWorld/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorld";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8546DB5C2B7B639300813DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABF58570C02F012FA3AEAD9 /* Pods-AstonishingDragonWorldTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstonishingDragonWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstonishingDragonWorld";
+			};
+			name = Debug;
+		};
+		8546DB5D2B7B639300813DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20401A9626557076FAEAD294 /* Pods-AstonishingDragonWorldTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstonishingDragonWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstonishingDragonWorld";
+			};
+			name = Release;
+		};
+		8546DB5F2B7B639300813DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0902A8845372496836FC69B /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstonishingDragonWorld;
+			};
+			name = Debug;
+		};
+		8546DB602B7B639300813DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7B6A72E7E3C0DD14D6D760 /* Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AstonishingDragonWorldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstonishingDragonWorld;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8546DB292B7B639200813DA4 /* Build configuration list for PBXProject "AstonishingDragonWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8546DB562B7B639300813DA4 /* Debug */,
+				8546DB572B7B639300813DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8546DB582B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8546DB592B7B639300813DA4 /* Debug */,
+				8546DB5A2B7B639300813DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8546DB5B2B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8546DB5C2B7B639300813DA4 /* Debug */,
+				8546DB5D2B7B639300813DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8546DB5E2B7B639300813DA4 /* Build configuration list for PBXNativeTarget "AstonishingDragonWorldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8546DB5F2B7B639300813DA4 /* Debug */,
+				8546DB602B7B639300813DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8546DB262B7B639200813DA4 /* Project object */;
+}

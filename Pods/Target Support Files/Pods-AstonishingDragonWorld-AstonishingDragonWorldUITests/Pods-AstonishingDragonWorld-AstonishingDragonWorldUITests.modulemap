@@ -1,0 +1,6 @@
+framework module Pods_AstonishingDragonWorld_AstonishingDragonWorldUITests {
+  umbrella header "Pods-AstonishingDragonWorld-AstonishingDragonWorldUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
